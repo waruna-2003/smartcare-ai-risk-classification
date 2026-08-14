@@ -1,0 +1,43 @@
+{
+  "target": "disease_risk_level",
+  "class_names": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "feature_set": "Clinical only",
+  "algorithm": "Logistic Regression",
+  "features": [
+    "age",
+    "previous_admissions",
+    "systolic_bp",
+    "diastolic_bp",
+    "blood_sugar_mg_dl",
+    "cholesterol_mg_dl",
+    "bmi",
+    "pulse_pressure",
+    "mean_arterial_pressure",
+    "has_previous_admission",
+    "gender"
+  ],
+  "random_state": 42,
+  "training_rows": 800,
+  "test_rows": 200,
+  "best_cv_macro_f1": 0.9882808893754509,
+  "test_metrics": {
+    "Accuracy": 0.995,
+    "Balanced accuracy": 0.9964539007092199,
+    "Macro precision": 0.9876543209876543,
+    "Macro recall": 0.9964539007092199,
+    "Macro F1": 0.9919281606296035,
+    "Weighted F1": 0.9950338008273636,
+    "Macro ROC-AUC (OvR)": 0.9995447803072492,
+    "Quadratic weighted kappa": 0.9945764182666232,
+    "Ordinal MAE": 0.005,
+    "Severe Low-High error rate": 0.0
+  },
+  "best_hyperparameters": {
+    "model__C": 100.0
+  },
+  "warning": "Educational prototype trained on synthetic data; not clinically validated."
+}
